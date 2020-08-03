@@ -1,0 +1,4 @@
+npm install styled-components
+npm install react-router-dom
+npm install react-slick
+-- instalações necessárias até final da Imersão Alura React Vídeo 2
