@@ -39,7 +39,9 @@ function CadastroCategoria() {
     // eslint-disable-next-line no-console
     console.log('alo alo w brazil');
 
-    const URL_TOP = 'http://localhost:8080/categorias';
+    const URL_TOP = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://underworld-flix.herokuapp.com/categorias';
     fetch(URL_TOP)
       .then(async (respostaDoServidor) => {
         const resposta = await respostaDoServidor.json();
